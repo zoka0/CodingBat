@@ -8,12 +8,13 @@
  * maxMod5(6, 2) → 6
  * maxMod5(3, 2) → 3
  */
+
 public int maxMod5(int a, int b) {
 
-    if(a == b) {
+    if (a == b) {
         return 0;
-    }else if(a % 5 == b % 5) {
+    } else if(a % 5 == b % 5) {
         return a < b? a : b;
     }
-    return a > b? a : b;
+    return Math.max(a, b);
 }
